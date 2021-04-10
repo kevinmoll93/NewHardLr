@@ -69,10 +69,10 @@
                         </li>
                         <li><a href="contacto.html">Contacto</a></li>
                         <br>
-                        <li> <a href="perificos.html">Perifericos</a> </li>
-                        <li> <a href="componentes.html">Componentes de PC</a> </li>
-                        <li> <a href="monitores.html">Monitores</a> </li>
-                        <li> <a href="notebooks.html">Notebooks</a> </li>
+                        <li> <td scope="col" class="perifericos"><button class="btn btn-dark btnCategory" value="perifericos">Perifericos</button> </li>
+                        <li> <td scope="row"><button class="btn btn-dark btnCategory" value="componentes">Componentes</button></td> </li>
+                        <li> <td scope="row"><button class="btn btn-dark btnCategory" value="monitores">Monitores</button></td> </li>
+                        <li> <td scope="row"><button class="btn btn-dark btnCategory" value="notebooks">Notebooks</button></td> </li>
                         <li> <a href="carrito.html">Carrito</a> </li>
                         <!-- <li> <a href="#contacto">Contacto</a> </li>
                         <li> <a href="#Perfil">Perfil</a> </li>
@@ -92,6 +92,38 @@
          </div>
        </div>
        <!-- end header inner -->
+
+          <!-- Lista de productos  -->
+    <div class="container-fluid p-5 row">
+      <!-- <table class="table table-dark">
+        <tbody>
+          <tr>
+            <td scope="col" class="perifericos"><button class="btn btn-dark btnCategory" value="perifericos">Perifericos</button>
+            <td scope="row"><button class="btn btn-dark btnCategory" value="componentes">Componentes</button></td>
+            <td scope="row"><button class="btn btn-dark btnCategory" id="monitores" value="monitores">Monitores</button></td>
+            <td scope="row"><button class="btn btn-dark btnCategory" id="notebooks" value="notebooks">Notebooks</button></td>
+            
+            <!-- <td scope="row"><button class="btn btn-dark">Menor a Mayor</button></td>
+            <td scope="row"><button class="btn btn-dark">Mayor a Menor</button></td> -->
+          <!-- </tr>
+        </tbody> --> 
+
+      </table>
+      
+      <!-- <div class="col-2">
+
+      <li class="page-item"><button class="page-link anterior" onclick="atrasPage()">Anterior</button></li>
+    </div> -->
+    <div class="col-8">
+      <div class="product-list row "></div>
+
+      <ul class="pagination justify-content-center"></ul>
+    </div>
+    <!-- <div class="col-2">
+      <li class="page-item"><button class="page-link despues" onclick="despuesPage()">Siguiente</button></li>
+    </div> -->
+  </div>
+  <!-- </ Lista de productos > -->
 
        <section class="slider_section">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -182,36 +214,6 @@
   </div>
   </header>
   <!-- end header -->
-
-    <!-- Lista de productos  -->
-    <div class="container-fluid p-5 row">
-      <table class="table table-dark">
-        <tbody>
-          <tr>
-            <td scope="col" class="perifericos"><button class="btn btn-dark btnCategory" value="perifericos">Perifericos</button>
-            <td scope="row"><button class="btn btn-dark btnCategory" value="componentes">Componentes</button></td>
-            <td scope="row"><button class="btn btn-dark btnCategory" id="monitores" value="monitores">Monitores</button></td>
-            <td scope="row"><button class="btn btn-dark btnCategory" id="notebooks" value="notebooks">Notebooks</button></td>
-            
-            <!-- <td scope="row"><button class="btn btn-dark">Menor a Mayor</button></td>
-            <td scope="row"><button class="btn btn-dark">Mayor a Menor</button></td> -->
-          </tr>
-        </tbody>
-      </table>
-      <div class="col-2">
-
-      <li class="page-item"><button class="page-link anterior" onclick="atrasPage()">Anterior</button></li>
-    </div>
-    <div class="col-8">
-      <div class="product-list row "></div>
-
-      <ul class="pagination justify-content-center"></ul>
-    </div>
-    <div class="col-2">
-      <li class="page-item"><button class="page-link despues" onclick="despuesPage()">Siguiente</button></li>
-    </div>
-  </div>
-  <!-- </ Lista de productos > -->
 
  <!--  footer -->
 <footr>
