@@ -10,7 +10,7 @@ $(document).ready(function () {
 
 // Funciones Lógicas para la lista de productos
 const getProducts = async page => {
-  let apiUrl = 'https://vuvqioudotixkoy.form.io/productos/submission?limit=4'
+  let apiUrl = 'https://kevinmoll93.github.io/Productos.json?limit=4'
   if(page){
       // console.log(page)
       apiUrl = `${apiUrl}&skip=${page}`
@@ -94,7 +94,7 @@ $('#search').keypress(function(event){
   if(keycode == '13'){
     $('.product-list').html('');
     $.ajax({
-           url: `https://vuvqioudotixkoy.form.io/productos/submission`,
+           url: `https://kevinmoll93.github.io/Productos.json`,
            success: function(data){
             for (i in data){
               $('.product-list').append(`
@@ -145,7 +145,7 @@ $('.btnCategory').click(function() {
   console.log(valor);
   $('.product-list').html('');
     $.ajax({
-           url: `https://vuvqioudotixkoy.form.io/productos/submission`,
+           url: `https://kevinmoll93.github.io/Productos.json`,
            success: function(data){
             for (i in data){
               $('.product-list').append(`
