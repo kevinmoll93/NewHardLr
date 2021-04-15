@@ -136,7 +136,7 @@ $(window).on("load", function () {
   $("#enviar").on("click", function () {
     //verificar stock de todos los productos
     const getProds = async () => {
-      const Url = 'https://kevinmoll93.github.io/Productos.json'
+      const Url = 'https://tzfbkslokymxigs.form.io/productos2/submission'
       let listaProds = await axios.get(Url)
       verificarStock(listaProds);
     }
@@ -187,7 +187,7 @@ $(window).on("load", function () {
           }
         }
         let upDateProd = async () => {
-          const apiUrl = 'https://kevinmoll93.github.io/Productos.json'
+          const apiUrl = 'https://tzfbkslokymxigs.form.io/productos2/submission'
           let response = await axios.put(`${apiUrl}${element._id}`, datosUpdate)
         }
         upDateProd();

@@ -32,7 +32,7 @@ const existe = Data => {
     }
     console.log(datos);
 
-    $.post('https://kevinmoll93.github.io/Productos.json', datos)
+    $.post('https://tzfbkslokymxigs.form.io/productos2/submission', datos)
     $('#ModalRespuesta').modal('show')
     
   } else {

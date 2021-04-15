@@ -10,17 +10,17 @@ $(document).ready(function () {
 
 // Funciones Lógicas para la lista de productos
 const getProducts = async page => {
-  let apiUrl = 'https://kevinmoll93.github.io/Productos.json'
+  let apiUrl = 'https://tzfbkslokymxigs.form.io/productos2/submission?limit=4'
   if(page){
-      // console.log(page)
-      apiUrl = `${apiUrl}&skip=${page}`
-      $('.anterior').css('display', 'block')
-  }
-    else {
-    $('.anterior').css('display', 'none')
-  } 
-  let response = await axios.get(apiUrl)
-  return response
+    // console.log(page)
+    apiUrl = `${apiUrl}&skip=${page}`
+    $('.anterior').css('display', 'block')
+}
+  else {
+  $('.anterior').css('display', 'none')
+} 
+let response = await axios.get(apiUrl)
+return response
 }
 
 const renderProductList = productArray => {
@@ -94,7 +94,7 @@ $('#search').keypress(function(event){
   if(keycode == '13'){
     $('.product-list').html('');
     $.ajax({
-           url: ``,
+           url: `https://tzfbkslokymxigs.form.io/productos2/submission`,
            success: function(data){
             for (i in data){
               $('.product-list').append(`
@@ -145,7 +145,7 @@ $('.btnCategory').click(function() {
   console.log(valor);
   $('.product-list').html('');
     $.ajax({
-           url: `https://kevinmoll93.github.io/Productos.json`,
+           url: `https://tzfbkslokymxigs.form.io/productos2/submission`,
            success: function(data){
             for (i in data){
               $('.product-list').append(`
