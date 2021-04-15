@@ -94,7 +94,7 @@ $('#search').keypress(function(event){
   if(keycode == '13'){
     $('.product-list').html('');
     $.ajax({
-           url: `https://kevinmoll93.github.io/Productos.json`,
+           url: ``,
            success: function(data){
             for (i in data){
               $('.product-list').append(`
