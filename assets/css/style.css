@@ -108,6 +108,15 @@
      max-width: 100%;
      height: auto;
 }
+#imagenesCards {
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
  :focus {
      outline: 0;
 }

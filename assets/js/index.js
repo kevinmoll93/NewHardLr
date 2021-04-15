@@ -55,7 +55,7 @@ const renderProductList = productArray => {
 const createProductTemplate = (name, price, stock, category, imageSrc, i) => {
   let template = `
   
-  <div class="card col-3 my-2 py-3">
+  <div class="card col-3 my-4 py-3">
     <h6 class="card-title titleOne"> <label class ="card-title">${name}</label> </h6>
       <div id="imagenesCards" style="background-image: url(${imageSrc})" ></div>  
       <p class="card-text"> Valor: $ ${price}</p>      
