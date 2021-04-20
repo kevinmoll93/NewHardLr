@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,9 +18,7 @@
     <!--Mi estilos -->
     <link rel="stylesheet" href="assets/css/NewProduct.css">
   </head>
-
   <body>
-
  <!-- Nav -->
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="index.html">
@@ -38,11 +35,10 @@
   >
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarColor03">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="NewProduct.html">Crear Productos</a>
@@ -50,38 +46,23 @@
       <li class="nav-item">
         <a class="nav-link" href="carrito.html">Carrito</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Buscador</a>
-      </li>
-  <!--     <li class="nav-item">
-        <input type="text" class="form-control" id="search" placeholder="search">
-      </li> -->
-
     </ul>
   </div>
 </nav>
 <!-- Nav -->
-
-
-
     <!-- Formulario para agregar un producto -->
     <div id="FormularioSetProducts">
       <form class="container mt-5 formulario">
         <h1>Ingrese nuevo producto</h1>
-
         <label for="nombre">Nombre</label>
         <input type="text" id="nombre" placeholder=" Nombre Producto " />
         <!-- <div class="alert alert-danger error" role="alert" id="error_nombre"></div> -->
-
         <label for="precio">Precio</label>
         <input type="text" id="precio" placeholder=" Precio Producto " />
-
         <label class="mt-1" for="stock">Stock</label>
         <input type="text" id="stock" placeholder=" Stock Producto " />
-
         <label class="mt-1" for="imageSrc">Imagen</label>
         <input type="text" id="imageSrc" placeholder=" Ingresa URL " />
-
         <label class="mt-1" for="categoria">Categoria</label>
         <select class="form-control" id="categoria">
           <option>Categoria</option>
@@ -90,19 +71,15 @@
           <option value="monitores">Monitores</option>
           <option value="notebooks">Notebooks</option>
         </select>
-
         <button class="btn btn-primary boton col-4 mt-4" type="submit">Crear</button>
-
         <div>
           <ul id="mensaje"></ul>
         </div>
       </form>
     </div>
 <!-- Fin del formulario -->
-
 <!-- Modal de respuesta al agregar un producto -->
 <!-- Button trigger modal -->
-
 <!-- Modal -->
 <div class="modal fade" id="ModalRespuesta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -118,60 +95,47 @@
       </div>
       <button class="btn btn-primary col-4 my-3" onclick="window.location.href='index.html' ">Volver al inicio</button>
       <button class="btn btn-light col-4 my-3" onclick="window.location.href='NewProduct.html'">Crear Otro Producto</button>
-
     </div>
   </div>
 </div>
 <!-- Fin del Modal -->
-
-<!-- Footer -->
-<footer class="iconos">
-
-  <!-- Footer Iconos -->
-  <div class="container2">
-    <div class="row">
-      <div class="col-md-12 py-3">
-        <div class="mb-2 flex-center">
-          <a class="fb-ic">
-            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <a class="tw-ic">
-            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <a class="li-ic">
-            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <a class="ins-ic">
-            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
+  <!-- Footer -->
+  <footer class="iconos footer" id="footer">
+    <!-- Footer Iconos -->
+    <div class="container2">
+        <div class="row">
+            <div class="col-md-12 py-3">
+                <div class="mb-2 flex-center">
+                    <a href="https://facebook.com" target="_blank" class="fb-ic">
+                        <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="tw-ic">
+                        <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="li-ic">
+                        <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="ins-ic">
+                        <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <!-- Footer Iconos -->
-
+    <!-- Footer Iconos -->
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2021 Copyright:
     kev
   </div>
   <!-- Copyright -->
-
 </footer>
 <!-- Footer -->
-
-
-
-
-
-
     <!--Jquery -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-
-
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="assets/js/NewProduct.js"></script>

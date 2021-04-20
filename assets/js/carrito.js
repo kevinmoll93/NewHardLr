@@ -14,7 +14,6 @@ $(window).on("load", function () {
   }
   cargarPiePag();
 
-
   let positionFooter = function (margen) {
     let footerTop = $('#footer').position().top + $('#footer').height();
     if (footerTop < $(window).height()) {
@@ -22,15 +21,12 @@ $(window).on("load", function () {
     }
   }
 
-  
-
   let detalleAlCarro = []; //lista de productos
   let listaProdApi = [];//informacion base para hacer PUT en API
 
   if (localStorage.carrito) {
     detalleAlCarro = JSON.parse(localStorage.getItem('carrito'));
   }
-
 
   function formatNumber(num) {
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
@@ -132,7 +128,6 @@ $(window).on("load", function () {
 
   cargarTabla();
 
-
   $("#enviar").on("click", function () {
     //verificar stock de todos los productos
     const getProds = async () => {
@@ -142,7 +137,6 @@ $(window).on("load", function () {
     }
     getProds();
   });
-
 
   let verificarStock = function (allProds) {
     let stockOk = true;
@@ -195,7 +189,6 @@ $(window).on("load", function () {
         console.log(error);
       }
     });
-    //todoBien???????????
     imprimirBoleta(listaCompra);
   }
 
